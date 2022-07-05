@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="snake.css">
+    <title>Snake Game!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <template id="modelGameOver">
+        <style>
+            #title{
+                /* color:rgb(247, 23, 23); */
+                font-size: 2em;
+                font-style:bold;
+                /* font-style: Goudy Old Style, arial; */
+                opacity:1;
+            }
+            #divGameOver{
+                position: absolute;
+                box-shadow: 2px 2px 2px silver;
+                border: solid 3px rgb(163, 21, 21);
+                text-align:center;
+                /* height: 100px;
+                width: 200px; */
+                padding: 20px;
+                background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+                opacity: 1;
+            }
+            span{
+                /* color:rgb(212, 24, 24); */
+                font-size: 1.3em;
+                font-style:bold;
+                opacity:1;
+            }
+            #score{
+                color:rgb(211, 4, 230);
+                font-size:1.5em;
+            }
+        </style>
+
+        <div id="divGameOver">
+            <div id="title">You lose</div>
+            <span>Your score is: </span><span id="score"></span>
+        </div>
+        
+    </template>
+
+    <!-- Elements HTML statiques -->
+    <div id="general">
+        <div id="tete"><h1>The Snake GAME</h1></div>
+        <div id ="blockGame">
+            <canvas id="zoneJeu"  width="600" height="300"></canvas>
+        </div>
+        <div id="displayScore"></div>
+        <div id="divStart">
+            <button id="idStart">Start GAME</button>
+        </div>   
+    </div>
+    <script src="./snake.js"></script>
+</body>
+</html>

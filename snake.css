@@ -1,0 +1,53 @@
+html, body {
+    height : 100%; 
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+
+#general{
+    display: block;
+}
+
+h1{
+    color:white;
+    margin-left: 250px;
+    font-style: "Goudy Old Style", "arial";
+}
+
+#zoneJeu{
+    background-color: rgb(23, 23, 228);
+    margin-left: 80px;
+}
+
+#divStart{
+    margin-left: 320px;
+    margin-top:30px;
+}
+
+#idStart{
+    font-size:1.4em;
+    background-color: blueviolet;
+}
+
+
+game-over{
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    height:200px;
+    width:300px;
+}
+
+#displayScore{
+    margin-left:90px;
+    font-style: "Goudy Old Style", "arial";
+    font-size: 1.3em;
+    font-style: bold;
+    color: brown;
+}
+
+
